@@ -1,0 +1,318 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #ff6b81;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 1.75rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover {
+    background-color: #ff4757;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('/img/gau-bong-dau-tay-lotso-ngoi.jpg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    background-color: #ff4757;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #e63946;
+}
+
+/* Content Section */
+.content {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.features {
+    margin-top: 2rem;
+}
+
+.features h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature-item {
+    margin: 1rem 0;
+}
+
+.feature-item h4 {
+    font-size: 1.5rem;
+    color: #ff6b81;
+    margin-bottom: 0.5rem;
+}
+
+.feature-item p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Products Section */
+.products {
+    margin: 2rem 0;
+}
+
+.products h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem;
+    width: 300px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-item h4 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+.product-item p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.buy-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #ff4757;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.buy-button:hover {
+    background-color: #e63946;
+}
+
+/* Pagination Styles */
+.pagination {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #f0f0f0;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active {
+    background-color: #ff6b81;
+    color: #fff;
+    border: none;
+}
+
+.pagination a:hover {
+    background-color: #ff4757;
+    color: #fff;
+    border: none;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.about-us-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-us-image {
+    width: 25%;
+    margin-right: 2rem;
+    border-radius: 10px;
+}
+
+.about-us-text {
+    width: 60%;
+}
+
+.about-us-text h3 {
+    font-size: 2rem;
+    color: #ff6b81;
+    margin-bottom: 1.5rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #807c7e; /* Màu nền tối hơn */
+    color: #4c4545; /* Màu chữ trắng */
+    padding: 3rem 2rem; /* Tăng khoảng cách padding để tạo không gian */
+    margin-top: 2rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Canh đều các cột trong footer */
+    flex-wrap: wrap; /* Cho phép các cột xuống dòng nếu không đủ chỗ */
+    max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+    margin: 0 auto;
+}
+
+.footer-column {
+    width: 30%; /* Mỗi cột chiếm 30% chiều rộng */
+    margin-bottom: 1.5rem; /* Khoảng cách dưới giữa các cột */
+}
+
+.footer-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem; /* Khoảng cách dưới tiêu đề của mỗi cột */
+    color: #ff6b81; /* Màu chữ đỏ hồng */
+}
+
+.footer-column ul {
+    list-style: none; /* Bỏ gạch đầu dòng */
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.5rem; /* Khoảng cách dưới giữa các mục */
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}   
+
+.footer-column ul li a:hover {
+    color: #ff4757; /* Màu khi hover */
+}
+
+ul.social-media {
+    display: flex;
+    justify-content: flex-start; /* Canh các biểu tượng mạng xã hội về đầu */
+    margin-top: 1rem;
+}
+
+ul.social-media li {
+    margin-right: 1rem;
+}
+
+ul.social-media li a {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+ul.social-media li a:hover {
+    color: #ff4757; /* Màu khi hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid #444; /* Đường kẻ ngăn cách phần dưới */
+    margin-top: 2rem;
+    color: #484b4b; /* Màu chữ xám nhạt */
+    font-size: 0.9rem;
+}
+
+.footer-bottom a {
+    color: #706868;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #ff4757; /* Màu khi hover */
+}
+
+.mailtbn{
+    height: 20px;
+    width: 50px;
+   background-color: white;
+   font-size: 12px;
+   font-weight: bold;
+   text-align: center;
+}
